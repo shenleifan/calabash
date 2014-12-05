@@ -10,9 +10,11 @@ module Calabash
   require 'calabash/device'
   require 'calabash/http'
   require 'calabash/server'
+  require 'calabash/gestures'
 
   include Utility
   include Calabash::Operations
+  include Gestures
 
   def calabash_start_app(opt={})
     _calabash_start_app(opt)
