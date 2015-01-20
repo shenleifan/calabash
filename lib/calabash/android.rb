@@ -16,5 +16,8 @@ module Calabash
     require 'calabash/android/build'
     require 'calabash/android/operations'
     require 'calabash/android/device'
+    require 'calabash/android/gestures'
+
+    include Calabash::Android::Gestures
   end
 end
