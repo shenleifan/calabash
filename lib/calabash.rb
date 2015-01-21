@@ -11,9 +11,11 @@ module Calabash
   require 'calabash/http'
   require 'calabash/server'
   require 'calabash/gestures'
-  require 'calabash/patch'
+  require 'calabash/query'
 
+  require 'calabash/patch'
   Calabash::Patch.apply_patches!
+
 
   include Utility
   include Calabash::Operations
